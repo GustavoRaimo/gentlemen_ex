@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <img src="./images/logo.png" alt="" style="height: 60px;">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link " href="#inicio">
+                            <i class="bi bi-house-door me-1"></i>
+                            Início</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link " href="#sobre-a-barbearia">
+                            <i class="bi bi-scissors"></i>
+                            Sobre a Barbearia</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#eventos">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#fotos">
+                            <i class="bi bi-images"></i>
+                            Geleria</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#fale-conosco">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="inicio">
+            <div class="carousel slide mh-50 h-100" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active w-100 h-100" data-bs-interval="3000">
+                        <img src="./images/slides/slide1.jpg" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000" >
+                        <img src="./images/slides/slide2.jpg" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/slide3.jpg" alt="Uma mesa de comida">
+                    </div>
+                </div>
+                <button  class="carousel-control-prev" type="button">
+                    <spam class="carousel-control-prev-icon" data-bs-target="#carousel" data-bs-slide="prev"></spam>
+                </button>
+                <button  class="carousel-control-next" type="button">
+                    <spam class="carousel-control-next-icon" data-bs-target="#carousel" data-bs-slide="next"></spam>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel"  class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class=" pt-5 pb-5 " id="sobre-a-barbearia">
+                <div class="container" >
+                    <div class="row lg-vh-100">
+                        <div class="col-md-5 ">
+                            <img src="https://images.pexels.com/photos/3162022/pexels-photo-3162022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-100" alt="Imagem interna do restaurante">
+                        </div>
+                        <div class="col-sm-12 col-md-7 mt-3 mt-md-0 fs-4">
+                            <h2 class="section-title  ">Sobre <span class="text-colored">a Barbearia</span></h2>
+                            <p>
+                                Bem-vindo ao Gentlemen Barbearia, onde o estilo encontra a tradição. Nosso salão é um refúgio para o homem moderno em busca de uma experiência de barbearia verdadeiramente excepcional. Com uma atmosfera clássica e acolhedora, nossos talentosos barbeiros estão dedicados a proporcionar cortes de cabelo e barbas impecáveis, combinando técnicas tradicionais com um toque contemporâneo. Aqui, cada visita é uma oportunidade para relaxar, socializar e sair sentindo-se renovado e confiante.
+                            </p>
+                            <h2 class="section-title ">Sobre <span class="text-colored">o espaço</span></h2>
+                            <p>
+                                O espaço do Gentlemen Barbearia foi meticulosamente projetado para oferecer o máximo conforto e estilo. Com uma decoração que combina elementos vintage e modernos, criamos um ambiente que evoca a elegância e a sofisticação de uma era passada. Nossas cadeiras luxuosas e área de espera acolhedora proporcionam um ambiente relaxante e convidativo para todos os nossos clientes. Além disso, a trilha sonora selecionada cuidadosamente complementa a experiência, criando uma atmosfera única e agradável. Visite-nos e experimente o que há de melhor em cuidados masculinos.
+                            </p>
+                            <ul class="social-links p-0">
+                                <li class="fs-3 m-0">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3 ms-3 me-3">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored" ></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5  text-center">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center fw-bold ">Para todas <span class="text-colored ">as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4 font-md">
+                    <div class="col-md-4">
+                        <img src="./images/eventos/tattoo.jpg"  class="w-100 rounded pb-5" alt="">
+                        <h3 class="section-title text-colored fs-2 pb-4 ">
+                            <i class="bi bi-feather"></i>
+                            Tattoo</h3>
+                        <p class="fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/noivo.jpg"  class="w-100 rounded pb-5" alt="">
+                        <h3 class="section-title text-colored fs-2 pb-4">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Dia do Noivo</h3>
+                        <p class="fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-4 ">
+                        <img src="./images/eventos/bar-barber.jpeg"  class="w-100 rounded pb-5" alt="">
+                        <h3 class="section-title text-colored fs-2 pb-4">
+                            <i class="bi bi-people-fill"></i>
+                            Bar</h3>
+                        <p class="fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fotos" class="pt-5 pb-5">
+            <div class="container ">
+                <div class="row mb-5">
+                    <h2 class="section-title text-center fw-bold ">Nossa <span class="text-colored">Galeria</span></h2>
+                </div>
+                <div class="row ">
+                    <aside class="col-md-2  p-1">
+                        <nav class="nav nav-pills flex-column nav-fotos ">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#profissional" class="fw-bold text-start nav-link active w-100 fs-4 ">Profissionais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#cortes" class="fw-bold text-start nav-link  w-100 fs-4 ">Cortes</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10 d-sm-block">
+                        <div class="tab-content">
+                            <div class="tab-pane" id="profissional">
+                                <div class="row">
+                                    <div class="col-md-4 mt-2">
+                                        <div class="card text-center w-100" >
+                                            <img src="https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833576.jpg?w=826&t=st=1695955338~exp=1695955938~hmac=2de9bede2bf207952dab7a6c1c9444de8a6a82937d76f5de347e13974d4d3091" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bolder">Nome 1</h5>
+                                                <p class="card-text">Some quick example text to build.</p>
+                                                <a href="#" class="btn btn-primary">
+                                                    <i class="bi bi-instagram"></i>
+                                                    Instagram</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="card text-center w-100" >
+                                            <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg?w=826&t=st=1695955373~exp=1695955973~hmac=b3f4d064ea36b3064d26a98cbefc90d5c8b6d897958fe66f4298c792469a574d" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bolder">Nome 2</h5>
+                                                <p class="card-text">Some quick example text to build.</p>
+                                                <a href="#" class="btn btn-primary">
+                                                    <i class="bi bi-instagram"></i>
+                                                    Instagram</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4  mt-2">
+                                        <div class="card text-center w-100" >
+                                            <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611731.jpg?w=826&t=st=1695955458~exp=1695956058~hmac=1a580e1f2ea1b29c50b3acbaa05b05c1b8d3052dbbddc4f8332e982c28ed62fa" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bolder">Nome 3</h5>
+                                                <p class="card-text">Some quick example text to build.</p>
+                                                <a href="#" class="btn btn-primary">
+                                                    <i class="bi bi-instagram"></i>
+                                                    Instagram</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane active" id="cortes">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4 mb-2 ">
+                                        <div class="card text-center w-100" >
+                                            <img src="https://coenterprises.com.au/wp-content/uploads/2018/02/male-placeholder-image.jpeg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 mb-2">
+                                        <div class="card text-center w-100" >
+                                            <img  src="https://www.neubaukompass.at/assets/img/ph_male.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4  mb-2 ">
+                                        <div class="card text-center w-100" >
+                                            <img src="https://www.baden-tv.com/storage/thumbs/285x/r:1643712200/105901.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 mt-3">
+                                        <div class="card text-center w-100" >
+                                            <img src="https://th.bing.com/th/id/OIP.TqARlJhLxIyLAms4AJZ8igHaHa?pid=ImgDet&w=768&h=768&rs=1" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5 h-100">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center fw-bold">Fale <span class="text-colored">Conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold ">Seu nome</label>
+                                <input type="text" name="" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold ">Seu Email</label>
+                                <input type="email" name="" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold ">Seu telefone (opcional)</label>
+                                <input type="tel" name="" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold ">Sua mensagem</label>
+                                <textarea name="mensagem" id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 ">
+                        <div class="row">
+                            <h3 class="section-title fs-4  pb-3 fw-bold">
+                                <i class="bi bi-hand-thumbs-up-fill text-colored"></i>
+                                Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-2">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-2 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-2">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored" ></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4  fw-bold">
+                                <i class="bi bi-cursor-fill text-colored"></i>
+                                Endereço</h3>
+                            <p>
+                                Rua Teste Exemplo Nº 145, Bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
